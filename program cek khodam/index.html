@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Cek Khodam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="max-w-xl p-6 mx-auto my-[13rem] ">
+    <div class="border bg-white border-violet-600 p-7 rounded-xl shadow-lg">
+      <h1 class="text-center font-semibold text-2xl underline text-violet-500 ">Cek Khodam Online</h1>
+      <form id="khodamForm" class="flex flex-col mt-4 gap-4">
+        <input type="text" class="border border-violet-500 rounded-md p-2 focus:outline-4 focus:outline-violet-500 "
+          placeholder="Masukkan Nama Anda" id="nama" required>
+        <button type="submit"
+          class="w-36 bg-violet-500 px-3 rounded-md py-1 text-white hover:bg-violet-800 duration-300 ease">Cek
+          Khodam</button>
+      </form>
+      <div class="capitalize mt-2" id="result"></div>
+      <div class="flex items-center gap-2 mt-3">
+        <img src="warning.png" alt="" width="20px">
+        Hasil Khodam Akan Hilang Selama 6 detik
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
